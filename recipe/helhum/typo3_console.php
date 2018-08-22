@@ -56,13 +56,3 @@ task('typo3:update:databaseschema', function () {
 task('typo3:setup:extensions', function () {
     runConsole('extension:setupactive');
 })->desc('Set up TYPO3 extensions');
-
-/**
- * Add TYPO3 tasks
- */
-after('transfer', 'typo3:dump:settings');
-after('transfer', 'typo3:create_default_folders');
-after('transfer', 'typo3:update:databaseschema');
-after('transfer', 'typo3:flush:caches');
-after('transfer', 'typo3:setup:extensions');
-after('release', 'typo3:flush:caches');
