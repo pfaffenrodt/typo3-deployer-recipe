@@ -20,7 +20,7 @@ set('shared_dirs', [
 
 set('shared_files',
     [
-        'conf/host.yml',
+        'config/host.yml',
         '{{typo3/public_dir}}/.htaccess'
     ]
 );

@@ -12,7 +12,7 @@ set('environment_config', [
 
 task('deploy:init', function () {
     invoke('deploy:prepare');
-    if (!test('[ -f {{deploy_path}}/shared/conf/host.yml ]')) {
+    if (!test('[ -f {{deploy_path}}/shared/config/host.yml ]')) {
         if (askConfirmation('Do you want to create new environment configuration?')) {
             $config = [];
             foreach (get('environment_config') as $name => $question) {
