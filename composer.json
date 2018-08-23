@@ -1,5 +1,5 @@
 {
-    "name": "helhum/typo3-deployer-recipe",
+    "name": "pfaffenrodt/typo3-deployer-recipe",
     "description": "Deployer recipe for TYPO3 deployment using deployer",
     "require": {
         "php": ">=7.0.0",
@@ -13,6 +13,10 @@
         {
             "name": "Helmut Hummel",
             "email": "info@helhum.io"
+        },
+        {
+            "name": "Dimitri Pfaffenrodt",
+            "email": "dimitri@pfaffenrodt.de"
         }
     ],
     "autoload": {
