@@ -1,5 +1,5 @@
 <?php
-
+namespace Deployer;
 /*
  * Global config
  */
